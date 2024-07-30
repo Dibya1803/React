@@ -1,0 +1,69 @@
+.Playlist {
+  width: 50%; /* Set a medium size width */
+  max-width: 600px; /* Ensure it doesn't exceed a certain width */
+  padding: 1rem;
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto; /* Center the Playlist component */
+  display: flex;
+  flex-direction: column; /* Ensure children are stacked vertically */
+  justify-content: space-between; /* Ensure the button stays at the bottom */
+  min-height: 200px; /* Initial height */
+}
+
+.Playlist input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center; /* Center the input text */
+  color: #1db954; /* Set the input text color */
+  font-size: 1.2rem; /* Increase font size */
+  font-family: "Montserrat", sans-serif; /* Ensure consistent font family */
+  font-weight: bold;
+}
+
+.Playlist h2 {
+  color: #1db954; /* Set a classy color for the heading */
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.0rem;
+  margin: 0.5rem 0;
+  text-align: center; /* Center the heading text */
+}
+.Playlist-save {
+  cursor: pointer;
+  padding: 0.77rem 0;
+  border-radius: 54px;
+  background-color: #1db954;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.833rem;
+  transition: background-color 0.25s;
+  color: #fff;
+  border: none;
+  margin-top: 1rem; /* Add some spacing above the button */
+}
+
+.Playlist-save:hover {
+  background-color: #14833b;
+}
+
+/* Add some margin to the Playlist to separate it from other elements */
+.App-playlist {
+  margin-top: 2rem;
+}
+
+/* Initial size of the Playlist box */
+.Playlist {
+  height: 200px; /* Adjust height as necessary */
+  overflow-y: auto; /* Allow scrolling if content exceeds the box */
+}
+
+/* Increase the height dynamically as songs are added */
+.Playlist .TrackList {
+  flex-grow: 1; /* Allow the track list to grow */
+  overflow-y: auto; /* Enable scrolling if content exceeds the box */
+  max-height: 600px; /* Set a max height for the playlist to prevent excessive growth */
+}

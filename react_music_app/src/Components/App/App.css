@@ -1,0 +1,63 @@
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  padding: 0.77rem 0;
+  background-color: #b16d22;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.88rem;
+  color: #fff;
+}
+
+h1 .highlight {
+  color: rgb(46, 113, 238);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.55rem;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 0 10%;
+  background-image: url("./bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  overflow-y: auto; /* Allow scrolling only for content */
+}
+
+@media only screen and (max-width: 1020px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
+}
